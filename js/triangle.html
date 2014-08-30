@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>
+      Triangle with HTML5 and Canvas
+    </title>
+  </head>
+  <body>
+    <canvas id="triangle_canvas" width="500px" height="500px">
+    </canvas>
+    <script type="text/javascript">
+      var canvas = document.getElementById('triangle_canvas');
+      var context = canvas.getContext('2d');
+
+      context.beginPath();
+      context.moveTo(100, 100);
+      context.lineTo(0, 250);
+      context.lineTo(200, 250);
+      context.lineTo(100, 100);
+
+      context.lineWidth = 1;
+      context.strokeStyle = 'coral';
+      context.fillStyle = "cornsilk";
+   
+      context.stroke();
+      context.fill();
+    </script>
+  </body>
+</html>
